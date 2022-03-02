@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style type="text/css">
+            body{
+                margin-left: 70px;
+            }
+            input{
+                height: 20px;
+                margin: 10px;
+                width: 500px;
+            }
+            label{
+                display: inline-block;
+                width: 165px;
+            }
+            #sub{
+                width: 125px;
+                float: right;
+                margin-right: 265px;
+                background-color: blue;
+                color: white;
+                height: 30px;
+                border: none;
+                cursor: pointer;
+            }
+
+            #lbl{
+                font-size: 20px;
+            }
+            ul{
+                list-style-type: none;
+                padding-bottom: 50px;
+                padding-right: 50px;
+            }
+
+            ul > li{
+                display: inline;
+                float: right;
+                display: block;
+                padding: 8px;
+            }
+
+            ul > li > a{
+                text-decoration: none;
+                color: black;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="index.html">Google Search</a></li>
+            <li><a href="images.html">Image Search</a></li>
+        </ul>
+        <form action="https://google.com/search">
+            <label id="lbl">Find page with...</label>
+            <div>
+                <label>all these words</label>
+                <input type="text" name="as_q" />
+            </div>
+            <div>
+                <label>this exact word or phrase</label>
+                <input type="text" name="as_epq" />
+            </div>
+            <div>
+                <label>any of these words</label>
+                <input type="text" name="as_oq" />
+            </div>
+            <div>
+                <label>none of these words</label>
+                <input type="text" name="as_eq" />
+            </div>
+            <input id="sub" type="submit" value="Advanced Search">
+        </form>
+    </body>
+</html>
